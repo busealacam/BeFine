@@ -7,14 +7,8 @@ Whether you’re feeling anxious, lonely, overwhelmed, or just burned out, BEFin
 ## Navigation
 [React Navigation](https://reactnavigation.org/docs/getting-started)
 
-`
-npm install @react-navigation/native
-`
-
-`
-npm install react-native-screens react-native-safe-area-context
-`
-
-`
-npm install @react-navigation/native-stack
-`
+```
+npm install @react-navigation/native  
+npm install react-native-screens react-native-safe-area-context  
+npm install @react-navigation/native-stack  
+```
