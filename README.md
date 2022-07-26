@@ -13,6 +13,20 @@ npm install react-native-screens react-native-safe-area-context
 npm install @react-navigation/native-stack  
 ```
 
+## Firebase
+[React Native Firebase](https://rnfirebase.io/)
+
 ```
 npm install --save @react-native-firebase/app
+```
+## React Hook Form & yup
+[React Hook Form](https://react-hook-form.com/get-started#Quickstart)
+```
+npm install react-hook-form  
+npm i @hookform/resolvers
+```
+
+[yup](https://github.com/jquense/yup)
+```
+npm i yup
 ```
