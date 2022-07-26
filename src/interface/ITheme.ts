@@ -6,13 +6,3 @@ export interface IColorTheme {
     BUTTON_COLOR: string;
 }
 
-export interface ISpacingTheme {
-    base: number;
-    double: number;
-  }
-
-export interface ITheme {
-    id: string,
-    color: IColorTheme,
-    spacing: ISpacingTheme,
-  }

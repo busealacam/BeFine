@@ -1,17 +1,17 @@
-import { NavigationContainer, ThemeProvider } from '@react-navigation/native';
+import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import React, { useState } from 'react';
-import { Text, View } from 'react-native';
-import { Toolbar } from './src/component/Toolbar';
-import { DEFAULT_LIGHT_THEME } from './src/globals/colors';
+import React from 'react';
 import { HomeScreen } from './src/screens/HomeScreen';
 
 const Stack = createNativeStackNavigator();
 
-export const App = React.memo(() => {
+export default function App() {
   return (
-    <ThemeProvider initial={DEFAULT_LIGHT_THEME}>
-        <Toolbar/>
-    </ThemeProvider>
-);
-});
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name='Home' component={HomeScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
+
+  );
+};

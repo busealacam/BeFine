@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "987729730421",
+    "project_id": "befine-bd4f3",
+    "storage_bucket": "befine-bd4f3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:987729730421:android:71cdc8af1d51eebda6113c",
+        "android_client_info": {
+          "package_name": "com.befine2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "987729730421-e6td7bbpj208lh36uahjkcup3ic2fdnf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.befine2",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "987729730421-5k6jl6jhdba8jmr15so0monsl1gnlppg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbCdCQjNWWL-WM2uvwN0NwHSuolSzck6s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "987729730421-5k6jl6jhdba8jmr15so0monsl1gnlppg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
