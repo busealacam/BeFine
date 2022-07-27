@@ -2,6 +2,8 @@
 /**** type of navigation ****/
 export type NavigationTypeParamList = {
     Home: undefined;
+    Login: undefined;
+    Signup: undefined;
 }
 
 /**** type of operation form registration form ****/
@@ -22,6 +24,5 @@ export type DashForm = {
     email: string,
     password: string,
     id: string,
-    type: ["web", "mobile"],
 }
 

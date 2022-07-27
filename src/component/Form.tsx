@@ -7,10 +7,11 @@ import auth from '@react-native-firebase/auth';
 import { useNavigation } from "@react-navigation/native";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { IFormType, NavigationTypeParamList, RForm } from "../types/types";
-// import { createUser, loginUser } from "../src/firebase/Auth";
 import { FormSchema } from "../schemas/schema";
+import { ButtonCustom } from "./ButtonCustom";
+import { createUser, loginUser } from "../firebase/Auth";
 
-export const RegistrationForm = ({ formType }: IFormType) => {
+export const Form = ({ formType }: IFormType) => {
     const navigation = useNavigation<NativeStackNavigationProp<NavigationTypeParamList>>()
     const { control, handleSubmit, formState: { errors } } = useForm<RForm>({
         resolver: yupResolver(FormSchema),
@@ -29,15 +30,15 @@ export const RegistrationForm = ({ formType }: IFormType) => {
         if (initializing) setInitializing(false);
     }
 
-    // const onSubmit = (data: RForm) => {
+    const onSubmit = (data: RForm) => {
 
-    //     if (formType === "signin") {
-    //         createUser(data)
-    //     }
-    //     if (formType === "login") {
-    //         loginUser(data, navigation)
-    //     }
-    // }
+        if (formType === "signin") {
+            createUser(data)
+        }
+        if (formType === "login") {
+            loginUser(data, navigation)
+        }
+    }
 
     useEffect(() => {
         const subscriber = auth().onAuthStateChanged(onAuthStateChanged);
@@ -87,11 +88,11 @@ export const RegistrationForm = ({ formType }: IFormType) => {
                         />
                     )}
                 />
-                {/* <ButtonCustom
+                <ButtonCustom
                     title={formType}
                     type={formType}
                     onPress={handleSubmit(onSubmit)}
-                /> */}
+                />
             </View>
         </ScrollView>
     )
